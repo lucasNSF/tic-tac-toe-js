@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+header {
+  text-align: center;
+  margin: 5vh 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.main-game {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 315px;
+  height: 315px;
+  background-color: white;
+}
+
+.game {
+  display: grid;
+  grid-template-areas: 
+    'square-1 square-2 square-3'
+    'square-4 square-5 square-6'
+    'square-7 square-8 square-9';
+  grid-gap: 8px;
+}
+
+.square {
+  border: none;
+  background-color: black;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.square:hover {
+  cursor: pointer;
+}
+
+#square-1 {
+  grid-area: square-1;
+}
+
+#square-2 {
+  grid-area: square-2;
+}
+
+#square-3 {
+  grid-area: square-3;
+}
+
+#square-4 {
+  grid-area: square-4;
+}
+
+#square-5 {
+  grid-area: square-5;
+}
+
+#square-6 {
+  grid-area: square-6;
+}
+
+#square-7 {
+  grid-area: square-7;
+}
+
+#square-8 {
+  grid-area: square-8;
+}
+
+#square-9 {
+  grid-area: square-9;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5vh 0;
+}
+
+footer h2 {
+  font-size: 1.6rem;
+}
+
+li {
+  margin-top: 2vh;
+  display: inline-block;
+}
+
+#linkedin {
+  margin-left: 1vw;
+}
+
+#linkedin a:hover {
+  color: lightskyblue;
+}
+
+#github a:hover {
+  color: lightcoral;
+}
+
+a {
+  transition: 0.4s;
+  color: white;
+}
+
+.p1 {
+  transition: 0.5s;
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 45px;
+}
+
+.p1 .x-left {
+  position: absolute;
+  background-color: lightcoral;
+  width: 8px;
+  height: 50px;
+  transform: rotate(50deg);
+}
+
+.p1 .x-right {
+  position: absolute;
+  background-color: lightcoral;
+  width: 8px;
+  height: 50px;
+  transform: rotate(-50deg);
+}
+
+div.p2 {
+  transform: 0.5s;
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: none;
+  border: 3px solid lightskyblue;
+  border-radius: 100%;
+}
+
+.scoreboard table {
+  border: 1px solid white;
+  padding: 5px;
+  position: absolute;
+  top: 25vh;
+  left: 20vw;
+}
+
+table {
+  font-size: 1.5rem;
+}
+
+caption {
+  border: 1px solid white;
+  border-bottom: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: .6rem 0;
+}
+
+thead th {
+  border-bottom: 1px solid white;
+}
+
+tbody th {
+  padding: .7rem 0;
+}
+
+#p1 {
+  color: lightcoral;
+}
+
+#p2 {
+  color: lightskyblue;
+}
+
+.modal {
+  position: absolute;
+  width: 30vw;
+  height: 25vh;
+  background-color: white;
+  border-radius: 50px;
+  left: 35%;
+  top: 15rem;
+}
+
+.modal-contant {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal h2 {
+  font-size: 2.8rem;
+  margin-top: 2rem;
+  color: black;
+  text-align: center;
+}
+
+.modal button {
+  width: 15%;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-left: 180px;
+  margin-top: 2rem;
+  border-radius: 50px;
+}
+
+.modal button:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

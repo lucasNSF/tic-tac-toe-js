@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7ed22bcdfc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tic-Tac-Toe</h1>
+    </header>
+    <main>
+      <section class="main-game">
+        <section class="game">
+          <button class="square" id="square-1" data-use="0">
+            <div class="p1" data-player="1">
+              <div class="x-left"></div>
+              <div class="x-right"></div>
+            </div>
+            <div class="p2" data-player="2"></div>
+          </button>
+          <button class="square" id="square-2" data-use="0">
+            <div class="p1" data-player="1">
+              <div class="x-left"></div>
+              <div class="x-right"></div>
+            </div>
+            <div class="p2" data-player="2"></div>
+          </button>
+          <button class="square" id="square-3" data-use="0">
+            <div class="p1" data-player="1">
+              <div class="x-left"></div>
+              <div class="x-right"></div>
+            </div>
+            <div class="p2" data-player="2"></div>
+          </button>
+          <button class="square" id="square-4" data-use="0">
+            <div class="p1" data-player="1">
+              <div class="x-left"></div>
+              <div class="x-right"></div>
+            </div>
+            <div class="p2" data-player="2"></div>
+          </button>
+          <button class="square" id="square-5" data-use="0">
+            <div class="p1" data-player="1">
+              <div class="x-left"></div>
+              <div class="x-right"></div>
+            </div>
+            <div class="p2" data-player="2"></div>
+          </button>
+          <button class="square" id="square-6" data-use="0">
+            <div class="p1" data-player="1">
+              <div class="x-left"></div>
+              <div class="x-right"></div>
+            </div>
+            <div class="p2" data-player="2"></div>
+          </button>
+          <button class="square" id="square-7" data-use="0">
+            <div class="p1" data-player="1">
+              <div class="x-left"></div>
+              <div class="x-right"></div>
+            </div>
+            <div class="p2" data-player="2"></div>
+          </button>
+          <button class="square" id="square-8" data-use="0">
+            <div class="p1" data-player="1">
+              <div class="x-left"></div>
+              <div class="x-right"></div>
+            </div>
+            <div class="p2" data-player="2"></div>
+          </button>
+          <button class="square" id="square-9" data-use="0">
+            <div class="p1" data-player="1">
+              <div class="x-left"></div>
+              <div class="x-right"></div>
+            </div>
+            <div class="p2" data-player="2"></div>
+          </button>
+        </section>
+      </section>
+
+      <section class="audios">
+        <audio src="sounds/effect.wav" id="player-turn"></audio>
+      </section>
+
+      <section class="scoreboard">
+        <table>
+          <caption>
+            Score
+          </caption>
+          <thead>
+            <tr>
+              <th>Player 1</th>
+              <th>Player 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th id="p1">0</th>
+              <th id="p2">0</th>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="modal hidden">
+        <div class="modal-content">
+          <h2>Player 2 Wins!</h2>
+          <button id="confirm">Ok</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>My Social Medias</h2>
+      <ul>
+        <li id="github">
+          <a href="#"><i class="fa-brands fa-github fa-2xl"></i></a>
+        </li>
+        <li id="linkedin">
+          <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
